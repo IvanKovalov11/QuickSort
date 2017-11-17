@@ -60,7 +60,7 @@ int main()
 	string number;
 	getline(cin, number);
 	istringstream stream(number);
-	if (!(stream >> size))
+	if (!(stream >> size) || (size < 2))
 	{
 		cout << "An error has occured while reading input data." << endl;
 		cin.get();
